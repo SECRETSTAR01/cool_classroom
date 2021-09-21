@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://arcane-chamber-53161.herokuapp.com/";
+const baseURL = "https://coolclassroom.herokuapp.com/";
 
 const axiosInstance = axios.create({
   baseURL: baseURL,
