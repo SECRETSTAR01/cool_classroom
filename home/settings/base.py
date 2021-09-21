@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
 DEBUG = True
-ALLOWED_HOSTS = ['localhost', 'arcane-chamber-53161.herokuapp.com', 'https://arcane-chamber-53161.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', 'coolclassroom.herokuapp.com', 'https://coolclassroom.herokuapp.com/']
 AUTH_USER_MODEL = 'users.User'
 
 INSTALLED_APPS = [
