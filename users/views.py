@@ -350,7 +350,7 @@ def seesubmissions(request):
         if serializer.is_valid():
             assg_id = serializer.validated_data['assg_id']
             submissions = Submission.objects.filter(assg_id=assg_id)
-            url = 'https://classroom-project.s3.us-west-2.amazonaws.com/'
+            url = 'https://res.cloudinary.com/dxxtuwqwj/image/upload/v1632284751/'
             result = []
 
             for i in range(len(submissions)):
@@ -458,7 +458,7 @@ def studenttest(request):
         sub.append(subjects[i].subject.subject_name)
 
     result = []
-    url = 'https://classroom-project.s3.us-west-2.amazonaws.com/'
+    url = 'https://res.cloudinary.com/dxxtuwqwj/image/upload/v1632284751/'
     for j in range(len(sub)):
         tests = Tests.objects.filter(subject=sub[j])
         for i in range(len(tests)):
@@ -532,7 +532,7 @@ def seeanswers(request):
         if serializer.is_valid():
             test_id = serializer.validated_data['assg_id']
             submissions = TestSubmission.objects.filter(test_id=test_id)
-            url = 'https://classroom-project.s3.us-west-2.amazonaws.com/'
+            url = 'https://res.cloudinary.com/dxxtuwqwj/image/upload/v1632284751/'
             result = []
 
             for i in range(len(submissions)):
@@ -563,7 +563,7 @@ def mytests(request):
     user = request.user
     result = []
     allassg = Tests.objects.filter(teacher_name=user)
-    url = 'https://classroom-project.s3.us-west-2.amazonaws.com/'
+    url = 'https://res.cloudinary.com/dxxtuwqwj/image/upload/v1632284751/'
     for i in range(len(allassg)):
         temp = []
         temp.append(allassg[i].test_name)
